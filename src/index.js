@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {
+  FaBookReader,
+  FaEnvelopeOpen,
+  FaHome,
+  FaSuperpowers,
+} from 'react-icons/fa';
+const menuItems = [
+  { title: 'Home', key: '/', icon: <FaHome /> },
+  { title: 'Projects', key: '/projects', icon: <FaSuperpowers /> },
+  { title: 'Courses', key: '/courses', icon: <FaBookReader /> },
+  { title: 'Contact', key: '/contact', icon: <FaEnvelopeOpen /> },
+];
+export const MenuContext = createContext(menuItems);
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MenuContext.Provider value={menuItems}>
+      <App />
+    </MenuContext.Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
