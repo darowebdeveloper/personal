@@ -1,11 +1,12 @@
 import React from 'react';
-import { FaHtml5, FaJs, FaReact } from 'react-icons/fa';
+import { FaJs, FaReact } from 'react-icons/fa';
 import {
   SiTailwindcss,
   SiGatsby,
   SiLaravel,
   SiRedux,
-  SiDocker,
+  SiMongodb,
+  SiMysql,
 } from 'react-icons/si';
 import Layout from '../components/Layout';
 function Home() {
@@ -56,9 +57,9 @@ function Home() {
               color="#38BDF8"
               className="w-full text-center mt-20"
             />
-            <FaHtml5
+            <SiMysql
               size={180}
-              color="#DD4B25"
+              color="#DD8900"
               className="w-full text-center mt-20 md:animate-bounce"
             />
             {/* second row */}
@@ -77,9 +78,9 @@ function Home() {
               color="#6C3FB2"
               className="w-full text-center mt-20 md:animate-bounce"
             />
-            <SiDocker
+            <SiMongodb
               size={180}
-              color="#22B2E4"
+              color="#14A44D"
               className="w-full text-center mt-20"
             />
           </div>
