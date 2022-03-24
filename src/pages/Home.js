@@ -17,13 +17,13 @@ function Home() {
         <div className="h-screen bg-gray-800">
           <div className="grid grid-cols-1 md:grid-cols-2 h-screen items-center md:border-4 md:border-white transform md:rotate-12 rotate-0 md:mx-11 bg-gray-800">
             <div className="md:h-1/2">
-              <lottie-player
+              {/* <lottie-player
                 src="https://assets1.lottiefiles.com/private_files/lf30_obidsi0t.json"
                 background="transparent"
                 speed="1"
                 loop
                 autoplay
-              ></lottie-player>
+              ></lottie-player> */}
             </div>
             <div className="text-white font-bold px-4 transform md:-rotate-12">
               <h1 className="text-4xl md:text-7xl">
