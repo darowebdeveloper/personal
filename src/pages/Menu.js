@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import { FaChevronRight } from 'react-icons/fa';
+import { FaChevronRight, FaDownload } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import { MenuContext } from '..';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import InstallPWA from '../components/InstallPWA';
 import Layout from '../components/Layout';
 
 function Menu() {
@@ -27,6 +28,14 @@ function Menu() {
               </NavLink>
             </div>
           ))}
+          <div className="px-4 text-xl">
+            <div className="bg-white w-full flex items-center rounded-md my-4 py-4 px-4">
+              <div className="mr-5">
+                <FaDownload />
+              </div>
+              <InstallPWA className="mr-auto" />
+            </div>
+          </div>
         </div>
         <Footer />
       </div>

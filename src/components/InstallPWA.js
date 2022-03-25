@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const InstallPWA = ({ className }) => {
-  const [supportsPWA, setSupportsPWA] = useState(false);
+  const [supportsPWA, setSupportsPWA] = useState(true);
   const [promptInstall, setPromptInstall] = useState(null);
 
   useEffect(() => {
