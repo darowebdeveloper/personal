@@ -147,16 +147,20 @@ function Home() {
             </div>
           </div>
         </div>
-        {/* Blog */}
+        {/* Blob */}
         <div>
           <div className="text-center h-52 bg-amber-500  text-white">
             <h1 className="text-4xl md:text-6xl font-bold pt-10 text-center">
               Lok Kru DARO
             </h1>
           </div>
-          <div className="relative text-gray-800 -mt-20">
-            <div className="md:h-3/4 md:w-1/2 mx-auto">
-              <img src={blobImage} alt="Blob" />
+          <div className="relative text-gray-800 -mt-20 ">
+            <div className="md:h-3/4  mx-auto text-center">
+              <img
+                src={blobImage}
+                alt="Blob"
+                className="inline-block  rounded-lg"
+              />
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
               <div>
@@ -173,7 +177,7 @@ function Home() {
                       country: 'Cambodia',
                     },
                     null,
-                    2,
+                    2
                   )}
                 </pre>
               </div>
