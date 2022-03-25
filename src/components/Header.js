@@ -11,12 +11,17 @@ function Header() {
       >
         <div className=" flex justify-between  md:flex-none ">
           <NavLink to="/" className="text-4xl font-semibold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-red-300 to-red-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-cyan-300 to-cyan-500">
               D
             </span>
-            A
+            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-gray-100 to-gray-300">
+              A
+            </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-teal-300 to-teal-500">
+              R
+            </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-tr from-yellow-300 to-yellow-500">
-              RO
+              O
             </span>
           </NavLink>
         </div>

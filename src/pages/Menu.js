@@ -1,12 +1,16 @@
 import React, { useContext } from 'react';
+import { FaChevronRight } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import { MenuContext } from '..';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import Layout from '../components/Layout';
 
 function Menu() {
   const menuItems = useContext(MenuContext);
   return (
-    <Layout>
+    <>
+      <Header />
       <div className="h-screen bg-gray-800">
         <div className="container mx-auto pt-20">
           {menuItems.map((item) => (
@@ -19,12 +23,14 @@ function Menu() {
               >
                 <div className="mr-5">{item.icon}</div>
                 <div>{item.title}</div>
+                <FaChevronRight className="ml-auto" />
               </NavLink>
             </div>
           ))}
         </div>
+        <Footer />
       </div>
-    </Layout>
+    </>
   );
 }
 
