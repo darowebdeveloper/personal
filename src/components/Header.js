@@ -27,7 +27,7 @@ function Header() {
             <div key={item.key}>
               <NavLink
                 className={({ isActive }) =>
-                  `inline-block py-4 pb-8 md:pb-0 px-2 mx-0 md:mx-1 md:py-2 md:px-4 w-full md:w-auto md:p-4 md:hover:bg-white md:hover:text-yellow-500 rounded-t-md md:rounded-md h-full  ${
+                  `inline-block py-4 pb-8 md:pb-0 mx-0 md:mx-1 md:py-2 md:px-4 w-full md:w-auto md:p-4 md:hover:bg-white md:hover:text-yellow-500 rounded-t-md md:rounded-md h-full  ${
                     isActive ? 'md:bg-white text-yellow-500' : ''
                   }`
                 }
