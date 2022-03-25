@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBars, FaAngleDoubleUp } from 'react-icons/fa';
 import { MenuContext } from '..';
+import InstallPWA from './InstallPWA';
 function Header() {
   const menuItems = useContext(MenuContext);
   return (
@@ -24,6 +25,7 @@ function Header() {
               O
             </span>
           </NavLink>
+          <InstallPWA className="ml-auto" />
         </div>
         <div
           className={`flex fixed md:static inset-x-0 bottom-0 justify-between bg-gray-900 md:bg-gray-800 px-4 md:px-0`}
