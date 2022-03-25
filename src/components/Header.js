@@ -11,12 +11,17 @@ function Header() {
       >
         <div className=" flex justify-between  md:flex-none ">
           <NavLink to="/" className="text-4xl font-semibold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-red-300 to-red-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-cyan-300 to-cyan-500">
               D
             </span>
-            A
+            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-gray-100 to-gray-300">
+              A
+            </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-teal-300 to-teal-500">
+              R
+            </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-tr from-yellow-300 to-yellow-500">
-              RO
+              O
             </span>
           </NavLink>
         </div>
@@ -27,7 +32,7 @@ function Header() {
             <div key={item.key}>
               <NavLink
                 className={({ isActive }) =>
-                  `inline-block py-4 pb-8 md:pb-0 px-2 mx-0 md:mx-1 md:py-2 md:px-4 w-full md:w-auto md:p-4 md:hover:bg-white md:hover:text-yellow-500 rounded-t-md md:rounded-md h-full  ${
+                  `inline-block py-4 pb-8 md:pb-0 mx-0 md:mx-1 md:py-2 md:px-4 w-full md:w-auto md:p-4 md:hover:bg-white md:hover:text-yellow-500 rounded-t-md md:rounded-md h-full  ${
                     isActive ? 'md:bg-white text-yellow-500' : ''
                   }`
                 }
