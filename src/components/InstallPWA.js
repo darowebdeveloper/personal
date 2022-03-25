@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { FaDownload } from 'react-icons/fa';
 
 const InstallPWA = ({ className }) => {
-  const [supportsPWA, setSupportsPWA] = useState(true);
+  const [supportsPWA, setSupportsPWA] = useState(false);
   const [promptInstall, setPromptInstall] = useState(null);
 
   useEffect(() => {
@@ -27,15 +28,22 @@ const InstallPWA = ({ className }) => {
     return null;
   }
   return (
-    <button
-      className={className}
-      id="setup_button"
-      aria-label="Install app"
-      title="Install app"
-      onClick={onClick}
-    >
-      Install
-    </button>
+    <div className="px-4 text-xl">
+      <div className="bg-white w-full flex items-center rounded-md my-4 py-4 px-4">
+        <div className="mr-5">
+          <FaDownload />
+        </div>
+        <button
+          className={className}
+          id="setup_button"
+          aria-label="Install app"
+          title="Install app"
+          onClick={onClick}
+        >
+          Install
+        </button>
+      </div>
+    </div>
   );
 };
 
