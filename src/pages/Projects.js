@@ -17,11 +17,11 @@ function Projects() {
     <Layout>
       <div className="">
         {/* The first part */}
-        <div className="h-screen">
-          <div className="md:h-3/4 text-center">
+        <div className="mb-20">
+          <div className="text-center">
             <img src={projectImage} alt="project" className="inline-block" />
           </div>
-          <p className="container mx-auto px-5  md:text-xl font-semibold text-center -mt-10">
+          <p className="container mx-auto px-5  md:text-xl font-semibold text-center">
             “Give a man a program, frustrate him for a day. Teach a man to
             program, frustrate him for a lifetime. With software there are only
             two possibilites: either the users control the programme or the
