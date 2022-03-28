@@ -8,7 +8,7 @@ function Contact() {
     <Layout>
       <div>
         <PageBanner image={contactImage} subtitle="Contact me" />
-        <div className="w-screen flex justify-center">
+        <div className="w-screen flex justify-center mb-20">
           <form className="w-full md:w-1/2 block p-10 shadow-2xl">
             <h2 className="text-2xl font-semibold">
               Submit your questions here
