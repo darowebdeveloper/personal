@@ -7,7 +7,7 @@ function Projects() {
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        `https://jsonplaceholder.typicode.com/users`
+        `https://jsonplaceholder.typicode.com/users`,
       );
       const data = await response.json();
       setProjects(data);
@@ -37,7 +37,7 @@ function Projects() {
           <h1 className="md:text-7xl text-2xl">Consistency</h1>
         </div>
         {/* The third part */}
-        <div className="container mx-auto my-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center justify-center gap-10">
+        <div className="container mx-auto my-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center justify-center gap-10 px-10">
           {projects.length === 0
             ? 'Loading..'
             : projects.map((item) => (

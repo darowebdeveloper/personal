@@ -10,7 +10,7 @@ function Courses() {
   return (
     <Layout>
       <div>
-        <PageBanner image={learningImage} subtitle={'Learning Quotes'}>
+        <PageBanner image={learningImage} subtitle={'Learning Quotes'} wave>
           The sole purpose of eLearning is to teach.” — Christopher Palm. “The
           most profound words will remain unread unless you can keep the learner
           engaged. You can't see their eyes to know if they got it so … say it,
@@ -21,7 +21,7 @@ function Courses() {
           secondLine="Learning"
           bgColor="bg-amber-500"
         />
-        <div className="container mx-auto my-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center justify-center gap-10">
+        <div className="container mx-auto my-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center justify-center gap-10 px-10">
           {courses.length === 0
             ? 'Loading...'
             : courses.map((course) => (
